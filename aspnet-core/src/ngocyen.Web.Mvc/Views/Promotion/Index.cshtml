@@ -23,6 +23,22 @@
         </div>
 
         <div class="card-body">
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <input type="text"
+                           id="searchPromotion"
+                           class="form-control"
+                           placeholder="Tìm theo tên hoặc mã voucher" />
+                </div>
+
+                <div class="col-md-3">
+                    <select id="filterStatus" class="form-control">
+                        <option value="">Tất cả trạng thái</option>
+                        <option value="active">Hoạt động</option>
+                        <option value="inactive">Ngừng hoạt động</option>
+                    </select>
+                </div>
+            </div>
             <table class="table table-bordered table-striped">
                 <thead>
                 <tr>

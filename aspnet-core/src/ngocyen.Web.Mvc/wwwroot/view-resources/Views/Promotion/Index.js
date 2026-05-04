@@ -5,6 +5,14 @@ let editingId = null;
 
 $(document).ready(function () {
     loadPromotions();
+
+    $('#searchPromotion').on('keyup', function () {
+        loadPromotions();
+    });
+
+    $('#filterStatus').on('change', function () {
+        loadPromotions();
+    });
 });
 
 function openCreateModal() {
@@ -72,9 +80,27 @@ function loadPromotions() {
     abp.services.app.promotion.getAll()
         .done(function (result) {
 
+            const keyword = $('#searchPromotion').val().toLowerCase();
+            const status = $('#filterStatus').val();
+
+            let filtered = result.filter(p => {
+                const matchKeyword =
+                    p.name.toLowerCase().includes(keyword) ||
+                    p.code.toLowerCase().includes(keyword);
+
+                const matchStatus =
+                    status === ''
+                        ? true
+                        : status === 'active'
+                            ? p.isActive
+                            : !p.isActive;
+
+                return matchKeyword && matchStatus;
+            });
+
             let html = '';
 
-            result.forEach(p => {
+            filtered.forEach(p => {
                 html += `
                   <tr data-discount="${p.discountValue}">
                     <td>${p.name}</td>
