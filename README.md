@@ -1,37 +1,23 @@
-# Important
+# Project Promotions
 
-Issues of this repository are tracked on https://github.com/aspnetboilerplate/aspnetboilerplate. Please create your issues on https://github.com/aspnetboilerplate/aspnetboilerplate/issues.
+Hệ thống quản lý voucher / khuyến mãi được xây dựng bằng ASP.NET Core MVC.
 
-# Introduction
+## Chức năng chính
+- Tạo voucher
+- Sửa voucher
+- Xóa voucher
+- Quản lý số lượng voucher
+- Tự động tính trạng thái hoạt động / hết hạn
 
-This is a template to create **ASP.NET Core MVC / Angular** based startup projects for [ASP.NET Boilerplate](https://aspnetboilerplate.com/Pages/Documents). It has 2 different versions:
+## Công nghệ sử dụng
+- ASP.NET Core MVC
+- ABP Framework
+- SQL Server
+- JavaScript / jQuery
+- Bootstrap
 
-1. [ASP.NET Core MVC & jQuery](https://aspnetboilerplate.com/Pages/Documents/Zero/Startup-Template-Core) (server rendered multi-page application).
-2. [ASP.NET Core & Angular](https://aspnetboilerplate.com/Pages/Documents/Zero/Startup-Template-Angular) (single page application).
- 
-User Interface is based on [AdminLTE theme](https://github.com/ColorlibHQ/AdminLTE).
- 
-# Download
-
-Create & download your project from https://aspnetboilerplate.com/Templates
-
-# Screenshots
-
-#### Sample Dashboard Page
-![](_screenshots/module-zero-core-template-ui-home.png)
-
-#### User Creation Modal
-![](_screenshots/module-zero-core-template-ui-user-create-modal.png)
-
-#### Login Page
-
-![](_screenshots/module-zero-core-template-ui-login.png)
-
-# Documentation
-
-* [ASP.NET Core MVC & jQuery version.](https://aspnetboilerplate.com/Pages/Documents/Zero/Startup-Template-Core)
-* [ASP.NET Core & Angular  version.](https://aspnetboilerplate.com/Pages/Documents/Zero/Startup-Template-Angular)
-
-# License
-
-[MIT](LICENSE).
+## Hướng dẫn chạy project
+1. Clone repository
+2. Restore database
+3. Chạy migration/update database
+4. Start project ngocyen.Web.Mvc
