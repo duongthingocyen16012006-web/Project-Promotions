@@ -8,6 +8,8 @@ Hệ thống quản lý voucher / khuyến mãi được xây dựng bằng ASP.
 - Xóa voucher
 - Quản lý số lượng voucher
 - Tự động tính trạng thái hoạt động / hết hạn
+- Tìm kiếm voucher theo tên / mã
+- Lọc voucher theo trạng thái hoạt động
 
 ## Công nghệ sử dụng
 - ASP.NET Core MVC
